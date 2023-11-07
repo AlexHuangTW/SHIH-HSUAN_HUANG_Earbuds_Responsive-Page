@@ -1,0 +1,103 @@
+@font-face {
+  font-family: cantarellregular;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/cantarell_regular-webfont.woff") format("woff"), url("../fonts/cantarell_regular-webfont.woff2") format("woff2");
+}
+body {
+  font-family: helvetica, arial, sans-serif;
+}
+
+h2 {
+  font-family: "cantarellregular", helvetica, arial;
+  font-size: 20px;
+  color: #BA3B0A;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+body {
+  background: #ffffff;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.center-text {
+  text-align: center !important;
+}
+
+#footer {
+  margin-top: 30px;
+  background-color: #ffffff;
+}
+
+#explode-view {
+  max-width: 100%;
+  /* width: 100vw; */
+}
+
+#contact {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+#contact #contact-title h2, #contact h3 {
+  color: #ffffff;
+  font-size: 1.5em;
+}
+#contact #contact-info {
+  margin-top: 60px;
+}
+
+#contact-info h3 {
+  color: #3497ED;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#contact-info span {
+  color: #ffffff;
+  padding: 10px 0;
+  display: block;
+}
+
+#contact-form {
+  color: #000000;
+  font-weight: bold;
+  border: solid 5px #B537FE;
+  margin: 40px 0;
+}
+#contact-form h2 {
+  color: #3497ED;
+  margin-top: 10px;
+  font-size: 1.8em;
+}
+#contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+#contact-form input, #contact-form textarea {
+  padding: 15px;
+  border: solid 1px #cccccc;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  font: inherit;
+}
+#contact-form textarea {
+  height: 150px;
+}
+#contact-form input[type=submit] {
+  width: 100px;
+  padding: 12px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  transition: all 200ms ease-in;
+  align-self: center;
+}/*# sourceMappingURL=main.css.map */
