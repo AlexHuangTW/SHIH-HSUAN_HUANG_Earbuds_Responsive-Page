@@ -1,3 +1,97 @@
+#promotional-1 {
+    background: url(../images/promotional-1-m.jpg) no-repeat top/100% auto;
+
+    background-size: cover;
+    height: 350px;
+}
+
+#promotional-2 {
+    background: url(../images/promotional-2-m.jpg) no-repeat top/100% auto;
+
+    background-size: cover;
+    height: 380px;
+}
+
+#promotional-3 {
+    background: url(../images/promotional-3-m.jpg) no-repeat top/100% auto;
+
+    background-size: cover;
+    height: 380px;
+}
+
+#video {
+    background:  #F3EBF7;
+    height: 416.77px;
+}
+
+#feature-con {
+    background: url(../images/feature-bg.jpg);
+    background-repeat: no-repeat;
+}
+
+#buy-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    margin: 20px 0;
+	padding: 20px 30px;
+    overflow: hidden;
+    background-color: #F3EBF7;
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    #promotional-1 {
+        background: url(../images/promotional-1.jpeg) no-repeat 50%/cover;
+
+        height: 600px;
+    
+    }
+
+    #promotional-2 {
+        background: url(../images/promotional-2.jpg) no-repeat 50%/cover;
+
+        height: 600px;
+    }
+
+    #promotional-3 {
+        background: url(../images/promotional-3.jpg) no-repeat 50%/cover;
+
+        height: 600px;
+    }
+
+    
+  }
+
+  @media screen and (min-width: 1200px) {
+
+    #promotional-1 {
+        background: url(../images/promotional-1.jpeg) no-repeat 50%/cover;
+   
+        height: 1080px;
+    
+    }
+
+    #promotional-2 {
+        background: url(../images/promotional-2.jpg) no-repeat 50%/cover;
+        height: 894px;
+    }
+
+    #promotional-3 {
+        background: url(../images/promotional-3.jpg) no-repeat 50%/cover;
+
+        height: 894px;
+    }
+
+    
+  }
+
 
 
 

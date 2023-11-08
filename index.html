@@ -7,9 +7,248 @@
     <title>HeartBuds-Promotional-Page</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/4bf0a75058.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <h1 class="hidden">Welcome to HeartBuds-Promotional-Page</h1>
     
+    <section id="header-con-icon">
+        <h2 class="hidden">header social media</h2>
+        <div id="main-header-icon" class="grid-con">
+            <div id="header-box1-media" class="col-start-2 col-end-4 m-col-start-11 m-col-end-13 l-col-start-11 l-col-end-13">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+ 
+            </div>
+        </div>
+    </section>
+
+    <section id="sticky-nav-con">
+        <h2 class="hidden">Main Navigation</h2>
+        <header id="main-header" class="grid-con">
+            <nav id="main-nav" class="col-span-full m-col-start-4 m-col-end-9 l-col-start-4 l-col-end-9">
+                <div id="burger-con">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Products</a>
+                        </li>
+                        <li>
+                            <a href="#">Features</a>
+                        </li>
+                
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="logo col-start-1 col-end-3 m-col-start-2 m-col-end-5">
+                <img src="images/heartbuds_logo.svg" alt="header-logo">
+            </div>
+            <div id="burger_button" class="col-start-4 col-end-5 m-col-start-11 m-col-end-12">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+        </header>
+    </section>
+
+    <main>
+        <section>
+            <h2 class="hidden">explode-view</h2>
+            <div class="col-span-full box">
+                <canvas id="explode-view"></canvas>
+            </div>
+        </section>
+
+        <section id="products">
+        
+            <div id="promotional-1" class="col-span-full">
+            </div>
+            <div id="promotional-2" class="col-span-full">
+            </div>
+            <div id="promotional-3" class="col-span-full">
+            </div>
+
+
+            <section id="color">
+                <h2 class="center-text">Color</h2>
+                <div class="grid-con">
+                    <div class="col-span-full m-col-start-4 m-col-end-10 l-col-start-4 l-col-end-10 box">
+                        <p>“Choose from four new colors to satisfy your favorite fashion sense and preferences.
+                            The 'Red' dazzles with a brilliant luster, 'Pink' is soft and gentle, 'Purple' pure and 
+                            sophisticated, 'Blue' is the epitome of cool freshness. Indulge in style right from your 
+                            ears with your favorite color.”</p>
+                    </div>
+
+  
+                    <div class="box m-col-start-3 m-col-end-4 l-col-start-3 l-col-end-4"></div>
+                    <div class="box m-col-start-5 m-col-end-6 l-col-start-5 l-col-end-6"></div>
+                    <div class="box m-col-start-7 m-col-end-8 l-col-start-7 l-col-end-8"></div>
+                    <div class="box m-col-start-9 m-col-end-10 l-col-start-9 l-col-end-10"></div>
+               </div>
+            </section>
+
+            <section id="video">
+                <h2 class="center-text">Movies</h2>
+                <div class="grid-con">
+                    <div class="col-span-full m-col-start-4 m-col-end-10 l-col-start-4 l-col-end-10 box"></div>
+                </div>
+            </section>
+        </section>
+
+        <section id="feature">
+            <h2 class="hidden">ar-view shows the various features</h2>
+            <model-viewer id="model" src="model/SHIH-HSUAN_HUANG_earbuds-promotional_x-ray.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="images/poster.webp" shadow-intensity="1">
+                <button class="Hotspot" slot="hotspot-1" data-position="-2.5329225740933246m 1.1635922320580485m 4.888439663570371m" data-normal="0.39515001995812976m 0.24864720989654154m 0.8843251815580935m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation" id="hotspot-1">
+                        <h2>Dynamic Light Feature</h2>
+                    <p>"Engage with the rhythm through the Dynamic Light Feature, emitting pulsating colors (blue, green, red) that change in sync with different music genres."</p>
+                    </div>
+                </button>
+                
+                <button class="Hotspot" slot="hotspot-2" data-position="-3.1131869409268194m 1.0263155750560982m 4.757304086176977m" data-normal="-0.6556943104714482m -0.27332322978680107m 0.703817720204801m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation" id="hotspot-2">
+                        <h2>Lateral Control Buttons</h2>
+                    <p>"Navigate your playlist with ease using the Lateral Control Buttons, allowing quick track selection with simple up or down presses for previous or next songs, respectively."</p>
+                    </div>
+                </button>
+                
+                <button class="Hotspot" slot="hotspot-3" data-position="-2.758395392154875m 1.1368023696662746m 4.317283490875813m" data-normal="-0.38733471745651565m -0.18496572903810304m -0.9031940520919545m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation" id="hotspot-3">
+                        <h2>Active Noise Cancellation</h2>
+                    <p>"Experience immersive sound with Active Noise Cancellation (ANC), designed to keep the world out so you can focus on your music."</p>
+                    </div>
+                </button>
+                
+                <button class="Hotspot" slot="hotspot-4" data-position="-2.710403634379759m 0.7642057184466216m 4.507695736382389m" data-normal="-0.3920037812577338m -0.12887652115617226m -0.9108918035498625m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation" id="hotspot-4">
+                        <h2>Rapid Charge Capability</h2>
+                    <p>"Stay powered for your soundscape with the Rapid Charge Capability, minimizing downtime and getting you back to your music in no time."</p>
+                    </div>
+                </button>
+        
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+                <button slot="ar-button" id="ar-button">
+                    View in your space
+                </button>
+                <div id="ar-prompt">
+                    <img src="images/ar_hand_prompt.png">
+                </div>
+            </model-viewer>
+
+            <div id="feature-con" class="grid-con">
+                <div class="col-span-2 m-col-span-4 l-col-span-4 box"></div>
+                <div class="col-span-2 m-col-span-4 l-col-span-4 box"></div>
+                <div class="col-span-2 m-col-span-4 l-col-span-4 box"></div>
+                <div class="col-span-2 m-col-span-4 l-col-span-4 box"></div>
+                <div class="col-span-2 m-col-span-4 l-col-span-4 box"></div>
+                <div class="col-span-2 m-col-span-4 l-col-span-4 box"></div>
+            </div>
+
+        </section>
+
+        <section id="x-ray">
+            <h2 class="hidden">X-ray perspective inside HeartBuds Pro </h2>
+            <div class="grid-con">
+                <div class="col-span-full box">
+                    <h3>X-ray perspective inside AirPods Pro highlighting custom-built driver and amplifier located near speaker on earbud.
+                    </h3>
+                </div>
+
+                <div class="col-span-full m-col-start-5 m-col-end-9 box">
+                    <p>Intelligent noise control</p>
+                    <h2>Unheard-of sound.
+                        On every level.</h2>
+                </div>
+
+                <div class="col-span-full m-col-start-4 m-col-end-10 box">
+                    <p>The H2-powered AirPods Pro now feature Adaptive Audio1, 
+                        automatically prioritizing sounds that need your attention as 
+                        you move through the world. By seamlessly blending Active 
+                        Noise Cancellation with Transparency mode when you need it, 
+                        Adaptive Audio magically delivers the right mix of sound for any environment.</p>
+                </div>
+            </div>
+
+            <div class="grid-con">
+                <section class="col-span-full">
+                    <h2 class="hidden">X-Ray revealer</h2>
+                    <div id="mobile-tablet-view">
+                        <!-- <img src="images/heartbuds_x-ray-2.jpg" alt="x-ray earbuds">
+                        <img src="images/heartbuds-non-x-ray.jpg" alt="Regular view of ear buds"> -->
+                    </div>
+                    <div id="outerShell">
+                        <div id="imageCon">
+                            <!-- xray version -->
+                            <div class="slideImage image-right"></div>
+                            <!-- rendered version -->
+                            <div class="slideImage image-left"></div>
+                            <!-- drag bar -->
+                            <div class="slideImage image-drag"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <div id="buy-btn"><a class="btn" href="#">BUY</a></div>
+
+        <section id="contact">
+            <h2 class="hidden">please get in touch</h2>
+           <div id="contact-title" class="center-text">
+               <h2>GReady for an auditory revolution?</h2>
+               <h3>Complete the form below to unlock your gateway to impeccable sound and unbeatable style</h3>
+           </div>
+
+
+           <div class="grid-con">
+               <div id="contact-info" class="col-start-2 col-end-4 m-col-start-3 m-col-end-6 l-col-start-3 l-col-end-6">
+                   <h3 class="center-text">Contact Info</h3>
+                   <span>Email: s_huang170057@fanshaweonline.ca
+                   </span>
+                   <span>Whatsapp: (+1) 12345678</span>
+               </div>
+
+               <div id="contact-form" class="col-span-full m-col-start-7 m-col-end-11 l-col-start-7 l-col-end-11">
+                   <h2 class="center-text">Contact Us</h2>
+                   <form action="email.php" method="POST" enctype="text/plain">
+                       <input name="fullName" type="text" placeholder="First & Last Name">
+                       <input name="contactInfo" type="text" required placeholder="Phone number or Email">
+                       <textarea name="msg" placeholder="Message"></textarea>
+                       <input name="submit" type="submit" value="Submit">
+                   </form>
+               </div>
+           </div>
+       </section>
+    </main>
+
+    <footer id="footer-con">
+        <div class="grid-con" id="footer">
+            <div class="logo col-start-2 col-end-4 m-col-start-6 m-col-end-8 l-col-start-6 l-col-end-8">
+                <img src="images/heartbuds_logo.svg" alt="footer-logo">
+            </div>
+            <!-- <div id="footer-nav" class="box col-span-full m-col-start-8 m-col-end-12 l-col-start-8 l-col-end-12">
+            </div> -->
+            <div id="web-creater" class="box col-span-full m-col-start-5 m-col-end-9 l-col-start-5 l-col-end-9">
+                <p>© Copyright 2023 Created by MHE</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Loads <model-viewer> for browsers: -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/xray.js"></script>
 </body>
 </html>
