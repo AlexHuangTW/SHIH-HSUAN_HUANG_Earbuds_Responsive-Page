@@ -1,0 +1,20 @@
+<model-viewer src="SHIH-HSUAN_HUANG_earbuds-promotional_x-ray.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
+    <button class="Hotspot" slot="hotspot-1" data-position="-2.5329225740933246m 1.1635922320580485m 4.888439663570371m" data-normal="0.39515001995812976m 0.24864720989654154m 0.8843251815580935m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Dynamic Light Feature</div>
+    </button><button class="Hotspot" slot="hotspot-2" data-position="-3.1131869409268194m 1.0263155750560982m 4.757304086176977m" data-normal="-0.6556943104714482m -0.27332322978680107m 0.703817720204801m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Lateral Control Buttons</div>
+    </button><button class="Hotspot" slot="hotspot-3" data-position="-2.758395392154875m 1.1368023696662746m 4.317283490875813m" data-normal="-0.38733471745651565m -0.18496572903810304m -0.9031940520919545m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Active Noise Cancellation</div>
+    </button><button class="Hotspot" slot="hotspot-4" data-position="-2.710403634379759m 0.7642057184466216m 4.507695736382389m" data-normal="-0.3920037812577338m -0.12887652115617226m -0.9108918035498625m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Rapid Charge Capability</div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>

@@ -1,5 +1,5 @@
 // vaiables
-$border-color: #B537FE;
+$border-color: #000000;
 $input-bg-color: #ffffff;
 $text-color: #000000;
 $border-style: solid 1px #cccccc;
@@ -8,7 +8,7 @@ $border-style: solid 1px #cccccc;
     margin-top: 40px;
     margin-bottom: 30px;
     #contact-title h2, h3 {
-        color: $input-bg-color;
+        color: $text-color;
         font-size: 1.5em;
     }
 
@@ -19,14 +19,14 @@ $border-style: solid 1px #cccccc;
 }
 
 #contact-info h3 {
-    color: #3497ED;
+    color: #000000;
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 #contact-info span {
-    color: $input-bg-color;
+    color: $text-color;
     padding: 10px 0;
     display: block;
 }
@@ -37,11 +37,11 @@ $border-style: solid 1px #cccccc;
     color: $text-color;
     font-weight: bold;
 
-    border: solid 5px $border-color;
+    border: solid 2px $border-color;
     margin: 40px 0;
 
 h2 {
-    color: #3497ED;
+    color: #000000;
     margin-top: 10px;
     font-size: 1.8em;
 }
@@ -67,8 +67,8 @@ textarea {
 input[type="submit"] {
         width: 100px;
         padding: 12px;
-        background-color: $input-bg-color;
-        color: $text-color;
+        background-color: #000000;
+        color: #ffffff;
         border: none;
         transition: all 200ms ease-in;
         align-self: center;
