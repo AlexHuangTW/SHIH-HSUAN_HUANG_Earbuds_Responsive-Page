@@ -13,7 +13,7 @@
 <body>
     <h1 class="hidden">Welcome to HeartBuds-Promotional-Page</h1>
     
-    <section id="header-con-icon">
+    <!-- <section id="header-con-icon">
         <h2 class="hidden">header social media</h2>
         <div id="main-header-icon" class="grid-con">
             <div id="header-box1-media" class="col-start-2 col-end-4 m-col-start-11 m-col-end-13 l-col-start-11 l-col-end-13">
@@ -23,12 +23,18 @@
  
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section id="sticky-nav-con">
         <h2 class="hidden">Main Navigation</h2>
         <header id="main-header" class="grid-con">
-            <nav id="main-nav" class="col-span-full m-col-start-4 m-col-end-9 l-col-start-4 l-col-end-9">
+       
+            <nav id="main-nav" class="col-start-1 col-end-2 m-col-start-3 m-col-end-11 l-col-start-3 l-col-end-11">
+                <div id="burger_button">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
                 <div id="burger-con">
                     <ul>
                         <li>
@@ -45,24 +51,30 @@
                             <a href="#">Contact</a>
                         </li>
                     </ul>
+                    
                 </div>
+                
             </nav>
 
-            <div class="logo col-start-1 col-end-3 m-col-start-2 m-col-end-5">
-                <img src="images/heartbuds_logo.svg" alt="header-logo">
+            <div class="logo col-start-2 col-end-4 m-col-start-6 m-col-end-8">
+                <a href=""><img src="images/heartbuds_logo.svg" alt="header-logo"></a>
             </div>
-            <div id="burger_button" class="col-start-4 col-end-5 m-col-start-11 m-col-end-12">
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
+
+
+            <div id="header-box1-media" class="col-start-4 col-end-5 m-col-start-11 m-col-end-13 l-col-start-11 l-col-end-13">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+ 
             </div>
+       
         </header>
     </section>
 
     <main>
         <section>
             <h2 class="hidden">explode-view</h2>
-            <div class="col-span-full box">
+            <div class="col-span-full">
                 <canvas id="explode-view"></canvas>
             </div>
         </section>
@@ -238,7 +250,7 @@
             </div>
             <!-- <div id="footer-nav" class="box col-span-full m-col-start-8 m-col-end-12 l-col-start-8 l-col-end-12">
             </div> -->
-            <div id="web-creater" class="box col-span-full m-col-start-5 m-col-end-9 l-col-start-5 l-col-end-9">
+            <div id="web-creater" class="center-text col-span-full m-col-start-5 m-col-end-9 l-col-start-5 l-col-end-9">
                 <p>© Copyright 2023 Created by MHE</p>
             </div>
         </div>
@@ -246,9 +258,11 @@
     
     <!-- Loads <model-viewer> for browsers: -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/model.js"></script>
     <script src="js/xray.js"></script>
+    <script src="js/explode.js"></script>
 </body>
 </html>

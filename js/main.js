@@ -1,19 +1,31 @@
-document.addEventListener("DOMContentLoaded", function() {
-    initBurgerMenu();
 
-});
+(function(){
+	"use strict";	
+	console.log("fired");
 
-function initBurgerMenu() {
-    const burgerBtn = document.querySelector("#burger_button");
-    const burgerCon = document.querySelector("#burger-con");
+	let button = document.querySelector("#burger_button");
+	let burgerCon = document.querySelector("#burger-con");
 
-    burgerBtn.addEventListener("click", function() {
-        if (burgerCon.style.display === "block") {
-            burgerCon.style.display = "none";
-        } else {
-            burgerCon.style.display = "block";
-            burgerCon.classList.add("slide-toggle");
-        }
-        burgerBtn.classList.toggle("open");
-    });
-}
+	function hamburgerMenu() {
+		burgerCon.classList.toggle("slide-toggle");
+		button.classList.toggle("expanded");
+	};
+
+	button.addEventListener("click", hamburgerMenu, false);		
+})();
+
+// header color changing when the mouse move in
+document.querySelector("#main-header").addEventListener("mouseover", function() {
+    this.style.backgroundColor = "#ffdddd";
+    this.style.transition = '1s';
+    this.style.borderBottom = "none"; 
+
+ });
+ document.querySelector("#main-header").addEventListener("mouseout", function() {
+    this.style.backgroundColor = "#ffffff";
+    this.style.transition = '1s';
+    this.style.borderBottom = "1px solid #707070";
+ });
+
+
+
