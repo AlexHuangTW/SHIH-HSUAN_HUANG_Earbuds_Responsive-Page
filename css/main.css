@@ -515,6 +515,11 @@ input[type=range]:focus::-webkit-slider-thumb {
   background-color: #f0d5fd;
 }
 
+#color h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 @media screen and (min-width: 768px) {
   #promotional-1 {
     background: url(../images/promotional-1.jpeg) no-repeat 50%/cover;
