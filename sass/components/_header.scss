@@ -1,13 +1,5 @@
 @use '../abstracts' as a;
 
-#sticky-nav-con {
-	padding-top: 10px;
-	padding-bottom: 10px;
-    // background-color: #ffdddd;
-
-    }
-
-
 .logo {
     max-width: 150px;
     // margin-top: 15px;
@@ -16,6 +8,7 @@
 
 #burger_button {
     margin-top: 15px;
+    cursor: pointer;
 }
 
 .burger-line {
@@ -64,6 +57,13 @@
 	color: #000000;
 	font-size: 2rem;
     position: relative;
+
+    &:hover {
+        border-bottom: 3px solid #B41428;
+        padding-bottom: 18px;
+        color: #ffffff;
+        transition: all 0.3s ease-in-out;
+    }
  }
 
 
@@ -86,6 +86,10 @@
 	font-size: 1.1rem;
 	color: #000000;
 	padding: 0 5px;
+
+    &:hover {
+        color: #ffffff;
+    }
 }
 
 

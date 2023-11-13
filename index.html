@@ -110,7 +110,28 @@
             <section id="video">
                 <h2 class="center-text">Movies</h2>
                 <div class="grid-con">
-                    <div class="col-span-full m-col-start-4 m-col-end-10 l-col-start-4 l-col-end-10 box"></div>
+                    <div id="player-container" class="col-span-full m-col-start-4 m-col-end-10 l-col-start-4 l-col-end-10">
+                        <video controls poster="images/video-cover.jpg">
+                            <source src="video/HeartBuds-v2.mp4" type="video/mp4">
+                        
+                        </video>
+                        <div class="video-controls hidden" id="video-controls">
+                            <button id="play-button">
+                                <i class="fa fa-play-circle-o video-icons"></i>
+                            </button>
+                            <button id="pause-button">
+                                <i class="fa fa-pause-circle-o video-icons"></i>
+                            </button>
+                            <button id="stop-button">
+                                <i class="fa fa-stop-circle-o video-icons"></i>
+                            </button>
+                            <i class="fa fa-volume-up video-icons"></i>
+                            <input type="range" id="change-vol" step="0.05" min="0" max="1" value="1">
+                            <button id="full-screen">
+                                <i class="fa fa-arrows-alt video-icons"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </section>
         </section>
@@ -171,18 +192,18 @@
         <section id="x-ray">
             <h2 class="hidden">X-ray perspective inside HeartBuds Pro </h2>
             <div class="grid-con">
-                <div class="col-span-full box">
+                <div class="col-span-full center-text">
                     <h3>X-ray perspective inside AirPods Pro highlighting custom-built driver and amplifier located near speaker on earbud.
                     </h3>
                 </div>
 
-                <div class="col-span-full m-col-start-5 m-col-end-9 box">
+                <div class="col-span-full m-col-start-5 m-col-end-9 center-text">
                     <p>Intelligent noise control</p>
                     <h2>Unheard-of sound.
                         On every level.</h2>
                 </div>
 
-                <div class="col-span-full m-col-start-4 m-col-end-10 box">
+                <div class="col-span-full m-col-start-4 m-col-end-10 center-text">
                     <p>The H2-powered AirPods Pro now feature Adaptive Audio1, 
                         automatically prioritizing sounds that need your attention as 
                         you move through the world. By seamlessly blending Active 
@@ -250,7 +271,7 @@
             </div>
             <!-- <div id="footer-nav" class="box col-span-full m-col-start-8 m-col-end-12 l-col-start-8 l-col-end-12">
             </div> -->
-            <div id="web-creater" class="center-text col-span-full m-col-start-5 m-col-end-9 l-col-start-5 l-col-end-9">
+            <div id="web-creater" class="col-span-full m-col-start-5 m-col-end-9 l-col-start-5 l-col-end-9">
                 <p>© Copyright 2023 Created by MHE</p>
             </div>
         </div>
@@ -264,5 +285,6 @@
     <script src="js/model.js"></script>
     <script src="js/xray.js"></script>
     <script src="js/explode.js"></script>
+    <script src="js/video.js"></script>
 </body>
 </html>
