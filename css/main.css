@@ -483,6 +483,16 @@ input[type=range]:focus::-webkit-slider-thumb {
 #feature-con {
   background: url(../images/feature-bg.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+}
+#feature-con h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#feature-size {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #buy-btn {
