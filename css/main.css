@@ -29,11 +29,9 @@ body {
 
 .center-text {
   text-align: center !important;
-}
-
-#sticky-nav-con {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
 }
 
 .logo {
@@ -42,6 +40,7 @@ body {
 
 #burger_button {
   margin-top: 15px;
+  cursor: pointer;
 }
 
 .burger-line {
@@ -86,6 +85,12 @@ body {
   font-size: 2rem;
   position: relative;
 }
+#main-nav ul li a:hover {
+  border-bottom: 3px solid #B41428;
+  padding-bottom: 18px;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
 
 #burger_button.expanded {
   transform: rotate(90deg);
@@ -106,6 +111,9 @@ body {
   font-size: 1.1rem;
   color: #000000;
   padding: 0 5px;
+}
+#header-box1-media a:hover {
+  color: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
@@ -175,6 +183,7 @@ body {
 
 #web-creater {
   margin-top: 15px;
+  text-align: center;
 }
 
 #explode-view {
@@ -385,7 +394,90 @@ model-viewer > #ar-prompt > img {
 
 #video {
   background: #F3EBF7;
-  height: 416.77px;
+}
+#video h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#player-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.video-controls {
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding: 20px;
+  bottom: 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+  display: flex;
+  transition: all 0.2s ease;
+}
+
+.video-controls.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+button {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.video-icons {
+  color: #fff;
+  font-size: 28px;
+  margin-left: 20px;
+}
+
+.fa-volume-up {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+/*********** Baseline, reset styles ***********/
+input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 25rem;
+}
+
+/* Removes default focus */
+input[type=range]:focus {
+  outline: none;
+}
+
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+/* slider track */
+input[type=range]::-webkit-slider-runnable-track {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -4px; /* Centers thumb on the track */
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+input[type=range]:focus::-webkit-slider-thumb {
+  outline: 3px solid #ffffff;
+  outline-offset: 0.125rem;
 }
 
 #feature-con {
@@ -407,6 +499,10 @@ model-viewer > #ar-prompt > img {
   color: rgb(0, 0, 0);
   border-radius: 30px;
   font-size: 1.6rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #f0d5fd;
 }
 
 @media screen and (min-width: 768px) {
@@ -496,4 +592,8 @@ model-viewer > #ar-prompt > img {
   border: none;
   transition: all 200ms ease-in;
   align-self: center;
+  cursor: pointer;
+}
+#contact-form input[type=submit]:hover {
+  background-color: #6c6c6c;
 }/*# sourceMappingURL=main.css.map */

@@ -72,6 +72,11 @@ input[type="submit"] {
         border: none;
         transition: all 200ms ease-in;
         align-self: center;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #6c6c6c;
     }
 }
 
