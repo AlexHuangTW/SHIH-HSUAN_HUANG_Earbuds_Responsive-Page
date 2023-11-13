@@ -114,6 +114,16 @@ input[type="range"] {
 #feature-con {
     background: url(../images/feature-bg.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    h2 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+
+#feature-size {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #buy-btn {
@@ -136,6 +146,7 @@ input[type="range"] {
     }
 }
 
+
 @media screen and (min-width: 768px) {
 
     #promotional-1 {
@@ -156,7 +167,6 @@ input[type="range"] {
 
         height: 600px;
     }
-
     
   }
 
