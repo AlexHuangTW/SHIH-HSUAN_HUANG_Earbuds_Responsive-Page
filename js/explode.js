@@ -33,7 +33,7 @@
             pin: true,
             scrub: 1,
             start: "top top",
-            markers: true
+            // markers: true
         },
         // everytime you use scroll
         onUpdate: render

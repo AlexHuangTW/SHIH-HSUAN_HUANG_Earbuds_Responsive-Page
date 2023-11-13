@@ -7,7 +7,26 @@
     const infoBoxes = [
       {
         title: "Speaker",
-        text: "Noise-cancelling microphones and a rear copper shield are optimally placed to quickly detect outside noises, working together to counter noise before it disturbs your experience."
+        text: "Noise-cancelling microphones and a rear copper shield are optimally placed to quickly detect outside noises, working together to counter noise before it disturbs your experience.",
+        image: 'images/dynamic-light.jpg'
+      },
+
+      {
+        title: "Speaker",
+        text: "Noise-cancelling microphones and a rear copper shield are optimally placed to quickly detect outside noises, working together to counter noise before it disturbs your experience.",
+        image: 'images/control-buttons.jpg'
+      },
+
+      {
+        title: "Speaker",
+        text: "Noise-cancelling microphones and a rear copper shield are optimally placed to quickly detect outside noises, working together to counter noise before it disturbs your experience.",
+        image: 'images/noise-cancellation.jpg'
+      },
+
+      {
+        title: "Speaker",
+        text: "Noise-cancelling microphones and a rear copper shield are optimally placed to quickly detect outside noises, working together to counter noise before it disturbs your experience.",
+        image: 'images/rapid-charge.jpg'
       }
     ]
   
@@ -22,6 +41,12 @@
     function loadInfo() {
       infoBoxes.forEach((infoBox, index)=>{
         let selected = document.querySelector(`#hotspot-${index+1}`);
+        const imgElement = document.createElement('img');
+        imgElement.src = infoBox.image;
+        const titleElement = document.createElement('h2');
+        titleElement.textContent = infoBox.title;
+        const textElement = document.createElement('p');
+        textElement.textContent = infoBox.title;
         // document.createElement('h2');
         // .textContent = infoBoxe.title;
         // document.createElement('p');
@@ -30,7 +55,7 @@
         console.log(infoBox.title);
         console.log(infoBox.text);
   
-        // selected.appendChild();
+        selected.appendChild(imgElement);
         // selected.appendChild();
       })
     }
